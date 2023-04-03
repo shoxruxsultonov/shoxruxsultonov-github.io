@@ -3,29 +3,68 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> html, css 2-dars</title>
+	<title>2-topshiriq</title>
 	<style>
-		*{
-			padding: 50px;
-			margin: 50px;
-			border: 20px;
-		}
-		.box {
-			color: dodgerblue;
-			background-color: dodgerblue;
-		}
-		.box:hover {
-			color: white;
-			background-color: black;
-		}
-		.box ::selection {
-	background-color:yellow;
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  padding: 100px;
+}
+
+.container {
+  background-color: green;
+  padding: 10px;
+  width: 350px;
+  height: 430px;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+  font-family: Arial;
+  margin: 30px 0;
+  color: black;
+}
+
+input {
+  padding: 5px 20px;
+  text-transform: lowercase;
+  text-align: left;
+  font-family: Arial;
+  margin: 20px 10px;
+  width: 95%;
+  height: 35px;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+
+  text-transform: uppercase;
+  text-align: center;
+  background-color: dodgerblue;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+
 	</style>
 </head>
 <body>
 
-	<h1 class="box">2-dars</h1>
-
-
+<div class="container">
+    <h1>Login form</h1>
+    <form>
+      <input type="text" placeholder="username">
+      <input type="password" placeholder="password">
+      <input type="submit" value="Login">
+    </form>
+  </div>
 </body>
 </html>
